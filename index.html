@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="app"class="container">
+        <header>
+            <div id="logo">
+                <img src="./logo-small.svg" alt="">
+            </div>
+        </header>
+        <main class="contenitore_dischi"> 
+            <div v-for="ciao in cds" class="ciao">
+                <img :src="ciao.poster" alt="">
+                <h3>{{ciao.title}}</h3>
+                
+                <p>{{ciao.author}}</p>
+                <p>{{ciao.year}}</p>
+
+
+            </div>
+           
+                
+
+            
+           
+        </main>
+        
+        
+
+    </div>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
